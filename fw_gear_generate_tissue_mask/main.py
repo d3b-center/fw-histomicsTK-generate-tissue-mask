@@ -7,10 +7,10 @@ from fw_core_client import CoreClient
 from flywheel_gear_toolkit import GearToolkitContext
 import flywheel
 
-from get_tissue_mask import generate_tissue_mask
+from .get_tissue_mask import generate_tissue_mask
 
 from .run_level import get_analysis_run_level_and_hierarchy
-from .get_analysis import get_matching_analysis
+# from .get_analysis import get_matching_analysis
 
 log = logging.getLogger(__name__)
 
@@ -42,7 +42,7 @@ def run(client: CoreClient, gtk_context: GearToolkitContext):
     with open(CONFIG_FILE_PATH) as config_file:
         config = json.load(config_file)
 
-    input_file_name = config['inputs']['input_image']['location']['name']
+    input_file_name = config['inputs']['input_image']['location']['path']
 
     # run the main processes & upload output file back to acquisition
     print(f'Generating tissue mask for file: {input_file_name}')

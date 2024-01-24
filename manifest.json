@@ -6,7 +6,7 @@
   "maintainer": "D3b-TIRU <flywheel@d3b.center>",
   "url": "https://github.com/DigitalSlideArchive/HistomicsTK",
   "source": "https://github.com/d3b-center/fw-histomicsTK-generate-tissue-mask/tree/main",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "Apache-2.0",
   "custom": {
     "flywheel": {
@@ -14,7 +14,7 @@
     },
     "gear-builder": {
       "category": "utility",
-      "image": "chop.flywheel.io/histomicstk-generate-tissue-mask:0.0.1"
+      "image": "chop.flywheel.io/histomicstk-generate-tissue-mask:0.0.2"
     }
   },
   "inputs": {

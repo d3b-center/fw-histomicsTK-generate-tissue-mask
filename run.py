@@ -12,7 +12,7 @@ log = logging.getLogger(__name__)
 
 def main(context: GearToolkitContext) -> None:  # pragma: no cover
     """Parse config and run."""
-    fw,config = parse_config(context)
+    fw = parse_config(context)
 
     e_code = run(fw, context)
 
