@@ -4,14 +4,17 @@
   "description": "This tool can be used to generate a tissue mask for a whole slide histo-pathology image.",
   "author": "D3b-TIRU",
   "maintainer": "D3b-TIRU <flywheel@d3b.center>",
-  "url": "https://github.com/d3b-center/histomicstk-generate-tissue-mask",
-  "source": "https://github.com/d3b-center/histomicstk-generate-tissue-mask",
-  "version": "0.0.0",
+  "url": "https://github.com/DigitalSlideArchive/HistomicsTK",
+  "source": "https://github.com/d3b-center/fw-histomicsTK-generate-tissue-mask/tree/main",
+  "version": "0.0.1",
   "license": "Apache-2.0",
   "custom": {
+    "flywheel": {
+      "suite": "HistomicsTK"
+    },
     "gear-builder": {
       "category": "utility",
-      "image": "chop.flywheel.io/histomicstk-generate-tissue-mask:0.0.0"
+      "image": "chop.flywheel.io/histomicstk-generate-tissue-mask:0.0.1"
     }
   },
   "inputs": {
