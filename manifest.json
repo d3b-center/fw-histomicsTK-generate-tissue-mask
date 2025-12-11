@@ -6,7 +6,7 @@
   "maintainer": "D3b-TIRU <flywheel@d3b.center>",
   "url": "https://github.com/DigitalSlideArchive/HistomicsTK",
   "source": "https://github.com/d3b-center/fw-histomicsTK-generate-tissue-mask/tree/main",
-  "version": "0.0.2",
+  "version": "0.0.3-2",
   "license": "Apache-2.0",
   "custom": {
     "flywheel": {
@@ -14,7 +14,7 @@
     },
     "gear-builder": {
       "category": "utility",
-      "image": "chop.flywheel.io/histomicstk-generate-tissue-mask:0.0.2"
+      "image": "chop.flywheel.io/histomicstk-generate-tissue-mask:0.0.3-2"
     }
   },
   "inputs": {
@@ -29,5 +29,15 @@
       "description": "Log debug messages",
       "type": "boolean"
     }
-  }
+  },
+  "environment": {
+    "PATH": "/opt/poetry/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "PYTHON_VERSION": "3.9.7",
+    "PIP_NO_CACHE_DIR": "0",
+    "POETRY_HOME": "/opt/poetry",
+    "POETRY_VERSION": "1.1.11",
+    "POETRY_VIRTUALENVS_CREATE": "false",
+    "FLYWHEEL": "/flywheel/v0"
+  },
+  "command": "python run.py"
 }
